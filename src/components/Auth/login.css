@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap");
+
+/* ── Login Page ─────────────────────────────────────────────────────────── */
+.login-page {
+  min-height: 100vh;
+  background: #1a1a2e; /* same dark navy as sidebar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+  padding: 20px;
+}
+
+/* ── Card ───────────────────────────────────────────────────────────────── */
+.login-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Logo ───────────────────────────────────────────────────────────────── */
+.login-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.login-logo-icon {
+  font-size: 1.4rem;
+}
+
+.login-logo-text {
+  font-family: "Syne", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+}
+
+.login-logo-text em {
+  font-style: normal;
+  color: #f97316; /* same orange as sidebar active + btn-orange */
+}
+
+/* ── Card inner header ──────────────────────────────────────────────────── */
+.login-title {
+  margin: 0 0 6px;
+  font-family: "Syne", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+.login-subtitle {
+  margin: 0 0 28px;
+  font-size: 0.9rem;
+  color: #999;
+  text-align: center;
+}
+
+/* ── Error Box ──────────────────────────────────────────────────────────── */
+.login-error {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #ef4444;
+  padding: 12px 16px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+
+/* ── Form ───────────────────────────────────────────────────────────────── */
+.login-form-group {
+  margin-bottom: 18px;
+}
+
+.login-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #e5e5ea;
+  border-radius: 9px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #222;
+  background: #fafafa;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #f97316;
+  background: #fff;
+}
+
+/* ── Button ─────────────────────────────────────────────────────────────── */
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 9px 18px;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+
+.login-btn:hover {
+  background: #ea6c0d;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Hint ───────────────────────────────────────────────────────────────── */
+.login-hint {
+  margin-top: 20px;
+  font-size: 0.78rem;
+  color: #aaa;
+  text-align: center;
+}
+
+/* ── Password Eye Toggle ────────────────────────────────────────────────── */
+.login-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login-input-password {
+  padding-right: 44px; /* make room for the eye button */
+}
+
+.login-eye-btn {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.login-eye-btn:hover {
+  color: #f97316; /* same orange as the rest of the UI */
+  border-color: transparent;
+}
